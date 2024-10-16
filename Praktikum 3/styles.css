@@ -1,0 +1,305 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200,300,400&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background: #fbe488;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 250px;
+    padding: 10px 14px;
+    background: #fff;
+    border-right: 1px solid #e6e5e5;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+nav .logo {
+    display: flex;
+    align-items: center;
+    margin: 24px;
+}
+
+nav .logo-name {
+    color: #333;
+    font-size: 20px;
+    margin-right: 14px;
+    cursor: pointer;
+}
+
+.logo .logo-name {
+    color: #333;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.sidebar {
+    flex-grow: 1;
+    margin-top: 8px;
+}
+
+.sidebar .sidebar-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 16px;
+}
+
+.sidebar-content .list {
+    list-style: none;
+}
+
+.list .nav-link {
+    display: flex;
+    align-items: center;
+    margin: 8px 0;
+    padding: 14px 12px;
+    border-radius: 8px;
+    text-decoration: none;
+}
+
+.list .nav-link:hover {
+    background-color: #4070f4;
+}
+
+.nav-link .icon {
+    margin-right: 14px;
+    font-size: 20px;
+    color: #707070;
+}
+
+.nav-link .link {
+    font-size: 16px;
+    color: #707070;
+    font-weight: 400;
+}
+
+.lists .nav-link:hover .icon,
+.lists .nav-link:hover .link {
+    color: #fff;
+}
+
+.bottom-content {
+    margin-top: auto;
+}
+
+.bottom-content .lists {
+    list-style: none;
+    padding: 0;
+}
+
+.overlay {
+    display: none;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 5px;
+    left: 280px;
+    right: 20px;
+    z-index: 1000;
+    border-radius: 15px;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    background: #0f77e0;
+    border-radius: 10px;
+    padding: 8px;
+    width: 300px;
+}
+
+.search-input {
+    border: none;
+    background: transparent;
+    outline: none;
+    padding: 8px;
+    flex-grow: 1;
+}
+
+.header-icons {
+    display: flex;
+    align-items: center;
+}
+
+.header-icons .icon {
+    font-size: 24px;
+    cursor: pointer;
+    margin-right: 20px;
+    color: #707070;
+}
+
+.profile-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.profile-icon img {
+    width: 100%;
+    height: auto;
+}
+
+main {
+    margin-left: 240px;
+    padding: 20px;
+    margin-top: 80px;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.card {
+    width: calc(25% - 20px);
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.blue { background-color: #4a90e2; }
+.light-blue { background-color: #54a0ff; }
+.purple { background-color: #5b5996; }
+.green { background-color: #01ab9c; }
+
+.amount {  
+    font-size: 24px;  
+    font-weight: bold;  
+}  
+
+.saved {  
+    font-size: 14px;  
+    margin-top: 10px;  
+}
+
+.charts-container {  
+    display: flex;  
+    flex-wrap: wrap;  
+    justify-content: space-between;  
+    margin-top: 20px;  
+    padding: 20px;
+}  
+
+.chart {  
+    flex: 1;  
+    margin-right: 20px;  
+    padding: 20px;  
+    border-radius: 10px;  
+    background-color: #48eef1;  
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  
+}  
+
+.chart-controls {  
+    display: flex;  
+    justify-content: space-between;  
+    margin-bottom: 20px;  
+}  
+
+.chart-placeholder {  
+    height: 200px; /* Tinggi untuk placeholder grafik */  
+    background-color: #e0e0e0; /* Warna latar belakang untuk placeholder */  
+    border-radius: 10px;  
+}  
+
+.budget-container {  
+    margin-top: 20px;
+    display: flex;  
+    flex-direction: column;  
+    flex: 1;
+}  
+
+.budget {  
+    background-color: #f9f9f9;  
+    border-radius: 10px;  
+    padding: 20px;  
+    margin-bottom: 20px;  
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  
+    text-align: center;  
+}  
+
+.progress-circle {  
+    width: 100px;  
+    height: 100px;  
+    border-radius: 50%;  
+    border: 10px solid #e0e0e0;  
+    display: flex;  
+    align-items: center;  
+    justify-content: center;  
+    position: relative;  
+    margin: 0 auto 10px;  
+}  
+
+.progress-circle span {  
+    position: absolute;  
+    font-size: 24px;  
+    font-weight: bold;  
+}
+
+.chart-placeholder {
+    width: 100%;
+    height: 400px; /* Anda bisa mengubah ini sesuai kebutuhan */
+    background-color: rgba(240, 240, 240, 0.9); /* Warna latar belakang kontainer */
+    border-radius: 8px; /* Rounding pada sudut */
+    padding: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+canvas {
+    width: 100% !important;
+    height: 100% !important;
+}
+
+.pie-chart {  
+    width: 300px;   /* Anda bisa mengubah ukuran sesuai kebutuhan */  
+    height: 300px;  /* Tinggi yang sama dengan lebar untuk memastikan bentuk lingkaran */  
+    background-color: #e0e0e0; /* Warna latar belakang saat tidak ada data */  
+    border-radius: 0; /* Membuatnya berbentuk lingkaran */  
+    position: relative; /* Untuk absolute positioning dari label */  
+    margin: 0 auto; /* Memusatkan di dalam kontainer */  
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Bayangan ringan untuk efek kedalaman */  
+}  
+
+.pie-chart .label {  
+    position: absolute; /* Menempatkan label di tengah pie chart */  
+    top: 50%; /* Menyusun ke tengah vertikal */  
+    left: 50%; /* Menyusun ke tengah horizontal */  
+    transform: translate(-50%, -50%); /* Memindahkan label ke tengah */  
+    font-size: 16px; /* Ukuran font label */  
+    font-weight: bold; /* Menebalkan teks */  
+    color: #333; /* Mengatur warna teks */  
+}
+
+@media (max-width: 768px) {  
+    .pie-chart {  
+        width: 200px;  
+        height: 200px;  
+    }  
+}
+
